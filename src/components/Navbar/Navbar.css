@@ -1,0 +1,56 @@
+/* LandingPage.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.left {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.middle {
+    display: flex;
+    background-color: #333; /* Dark grey color */
+    border-radius: 13px; /* Rounded corners for the middle section */
+    padding: 18px; /* Adjust padding around the middle section */
+    margin-top: 8px; /* Adjust spacing from the top */
+    margin-bottom: 8px; /* Adjust spacing from the bottom */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.right {
+    text-align: right;
+}
+
+.signup-btn {
+    background-color: white;
+    color: black;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: -30px;
+    margin-top: -12px;
+    margin-bottom: -12px;
+}

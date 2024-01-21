@@ -1,0 +1,103 @@
+.landing-page {
+    display: flex;
+    flex-direction: column; /* Change to column to stack rows vertically */
+    justify-content: flex-start;
+    align-items: center; /* Center content horizontally */
+    height: 100vh;
+    background-color: white;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 165px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-container1 {
+    width: 60%; /* Adjusted width for better spacing */
+}
+
+.content-container2 {
+    width: 30%;
+    margin-right: 20px; /* Adjusted spacing between content containers */
+}
+
+.content-container3 {
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+}
+
+.icon-image {
+    width: 213px; /* Set the size of the icon image */
+    height: 126px;
+    border-radius: 100%;
+}
+
+.icon-image3 {
+    width: 162px; /* Set the size of the icon image */
+    height: 126px;
+    border-radius: 100%;
+}
+
+.laptop-image {
+    width: 500px; /* Adjust size of the circular image */
+    height: 300px;
+    border-radius: 20px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing between text and image */
+    margin-left: 306px; /* Adjusted margin-left */
+}
+
+.text-container2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing between text and image */
+    margin-left: 126px;
+}
+
+.big-text {
+    font-size: 150px; /* Adjust font size */
+    font-weight: bold; /* Optionally make the text bold */
+}
+
+.grey-text {
+    color: #d3d3d3;
+}
+
+.side-image {
+    width: 50px; /* Adjust size of the side image */
+    height: 50px;
+    margin-top: 10px; /* Adjust spacing between text and image */
+}
+
+.play-button-wrapper {
+    position: absolute;
+    top: 234px; /* Adjust the top position as needed */
+    left: 1210px; /* Adjust the left position as needed */
+    z-index: 2; /* Ensure the play button appears above other content */
+}
+
+.play-button {
+    width: 50px; /* Set the size of the play button icon */
+    height: 50px;
+    /* Additional styles as needed */
+}
+
+.image-container {
+    position: relative;
+}
