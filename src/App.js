@@ -4,6 +4,9 @@ import LandingPage from "./components/Pages/LandingPage";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 import './App.css';
+import LandingPage2 from "./components/Pages/LandingPage2";
+import LandingPage3 from "./components/Pages/LandingPage3";
+
 
 const App = () => {
     const [scrollDirection, setScrollDirection] = useState('down');
@@ -28,45 +31,15 @@ const App = () => {
         visible: { opacity: 1, y: 0 },
     };
 
-    const scrollToNextSection = () => {
-        scroll.scrollToBottom();
-    };
-
     return (
         <div>
             <Navbar />
             <Link to="section1" smooth={true} duration={500}>Section 1</Link>
-            <Link to="section2" smooth={true} duration={500}>Section 2</Link>
-
-            <motion.div
-                id="section1"
-                className="landing-page"
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-                transition={{ duration: 0.5 }}
-            >
-                <LandingPage />
+            <motion.div className="landing-page" initial="hidden" animate="visible" variants={variants} transition={{ duration: 0.5 }}>
+                <LandingPage/>
+                <LandingPage2 id="section1"/>
+                <LandingPage3 id="section1"/>
             </motion.div>
-
-            <motion.div
-                id="section2"
-                className="landing-page"
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-                transition={{ duration: 0.5 }}
-            >
-                <LandingPage />
-            </motion.div>
-
-            {/* Add more sections as needed */}
-
-            {scrollDirection === 'up' && (
-                <button onClick={scrollToNextSection} className="scroll-trigger">
-                    Scroll to Next Section
-                </button>
-            )}
         </div>
     );
 };
