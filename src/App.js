@@ -33,11 +33,11 @@ const App = () => {
 
     return (
         <div>
-            <Navbar />
-            <Link to="section1" smooth={true} duration={500}>Section 1</Link>
+            {/*<Navbar />*/}
+            {/*<Link to="section1" smooth={true} duration={500}>Section 1</Link>*/}
             <motion.div className="landing-page" initial="hidden" animate="visible" variants={variants} transition={{ duration: 0.5 }}>
-                <LandingPage/>
-                <LandingPage2 id="section1"/>
+                {/*<LandingPage/>*/}
+                {/*<LandingPage2 id="section1"/>*/}
                 <LandingPage3 id="section1"/>
             </motion.div>
         </div>

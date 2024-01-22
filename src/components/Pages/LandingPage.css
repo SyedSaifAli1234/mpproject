@@ -32,7 +32,6 @@
 
 .content-container2 {
     width: 30%;
-    margin-right: 20px; /* Adjusted spacing between content containers */
     position: relative; /* Make the container relative for absolute positioning */
 }
 
@@ -55,8 +54,8 @@
 }
 
 .laptop-image {
-    width: 500px; /* Adjust size of the circular image */
-    height: 300px;
+    width: 23em; /* Adjust size of the circular image */
+    height: 13em;
     border-radius: 20px;
     position: relative; /* Make the image container relative for absolute positioning */
 }
@@ -72,11 +71,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Adjust spacing between text and image */
-    margin-left: -55px;
 }
 
 .big-text {
-    font-size: 150px; /* Adjust font size */
+    font-size: 7em; /* Adjust font size */
     font-weight: bold; /* Optionally make the text bold */
 }
 

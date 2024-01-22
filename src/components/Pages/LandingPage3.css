@@ -1,8 +1,8 @@
-.first-section {
+.first-section-third {
     height: 100vh;
 }
 
-.landing-page {
+.landing-page-third {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,93 +11,58 @@
     background-color: white;
 }
 
-.first-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.first-row-third {
     width: 100%;
-    margin-top: 165px;
+    margin-top: 4em;
 }
 
-.second-row {
+.content-container1-third {
+    width: 90%; /* Adjusted width for better spacing */
+}
+
+.content-container2-third {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: end;
+    margin-right: 5em;
 }
 
-.content-container1 {
-    width: 60%; /* Adjusted width for better spacing */
-}
-
-.content-container2 {
-    width: 30%;
-    margin-right: 20px; /* Adjusted spacing between content containers */
-    position: relative; /* Make the container relative for absolute positioning */
-}
-
-.content-container3 {
-    display: flex;
-    align-items: center;
-    margin-left: 220px;
-}
-
-.icon-image {
+.icon-image-third {
     width: 213px; /* Set the size of the icon image */
     height: 126px;
     border-radius: 100%;
 }
 
-.icon-image3 {
-    width: 162px; /* Set the size of the icon image */
-    height: 126px;
-    border-radius: 100%;
-}
-
-.laptop-image {
+.laptop-image-third {
     width: 500px; /* Adjust size of the circular image */
     height: 300px;
     border-radius: 20px;
     position: relative; /* Make the image container relative for absolute positioning */
 }
 
-.text-container {
+.text-container-third {
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Adjust spacing between text and image */
     margin-left: 120px; /* Adjusted margin-left */
 }
 
-.text-container2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Adjust spacing between text and image */
-    margin-left: -55px;
+.big-text-third {
+    font-size: 7em; /* Adjust font size */
+    font-weight: bolder; /* Optionally make the text bold */
 }
 
-.big-text {
-    font-size: 150px; /* Adjust font size */
-    font-weight: bold; /* Optionally make the text bold */
-}
-
-.grey-text {
+.grey-text-third {
     color: #d3d3d3;
 }
 
-.side-image {
-    width: 50px; /* Adjust size of the side image */
-    height: 50px;
-    margin-top: 10px; /* Adjust spacing between text and image */
-}
-
-.play-button-wrapper {
+.play-button-wrapper-third {
     position: absolute;
     top: 234px; /* Adjust the top position as needed */
     left: 1210px; /* Adjust the left position as needed */
     z-index: 2; /* Ensure the play button appears above other content */
 }
 
-.play-button {
+.play-button-third {
     width: 50px; /* Set the size of the play button icon */
     height: 50px;
     position: absolute;
@@ -108,6 +73,43 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
 }
 
-.image-container {
+.image-container-third {
     position: relative;
 }
+
+.second-row-third{
+    display: flex;
+    justify-content: center;
+}
+
+.analytics-pill-third {
+    background-color: #ffd62d;
+    color: black;
+    font-size: 4em;
+    padding: 1em;
+    border-radius: 2em;
+    display: inline-block;
+    font-family: monospace;
+    height: 2em;
+    width: 7em;
+    overflow: hidden;
+}
+
+.marquee-text {
+    font-size: 2em;
+    white-space: nowrap;
+    animation: marquee 8s linear infinite;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+        padding-right: 1em; /* Adjust as needed */
+    }
+}
+
+

@@ -1,12 +1,8 @@
-// LandingPage.js
+// LandingPage3.js
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import './LandingPage3.css';
 import homeIcon1 from '../../assets/homeIcon1.png';
-import homeIcon3 from '../../assets/homeIcon3.png';
-import image1 from '../../assets/laptop.png';
-import playButton from '../../assets/play-button.png';
 
 const LandingPage3 = ({ id }) => {
     const variants = {
@@ -15,21 +11,25 @@ const LandingPage3 = ({ id }) => {
     };
 
     return (
-        <motion.div id={id} className="landing-page" initial="hidden" animate="visible" variants={variants} transition={{ duration: 0.5 }}>
-            <div className="first-section">
-                <div className="first-row">
-                    <div className="content-container1">
-                        <div className="text-container">
-                            <div className="big-text">Maximize <span className="grey-text">efficiency </span>with our intuitive</div>
+        <div id={id} className="landing-page-third" initial="hidden" animate="visible" variants={variants} transition={{ duration: 0.5 }}>
+            <div className="first-section-third">
+                <div className="first-row-third">
+                    <div className="content-container1-third">
+                        <div className="text-container-third">
+                            <div className="big-text-third">Maximize <span className="grey-text-third">efficiency </span>with our intuitive</div>
                         </div>
                     </div>
-                    <div className="content-container2">
-                        <div className="image-container">
+                    <div className="content-container2-third">
+                        <div className="">
+                            <img src={homeIcon1} alt="Home Icon" className="icon-image" />
+                        </div>
+                        <div className="analytics-pill-third">
+                            <div className="marquee-text">Analytics Service</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 
