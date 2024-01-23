@@ -3,8 +3,12 @@
 import React from 'react';
 import './Navbar.css'; // Import your CSS file
 import iconPng from '../../assets/navIcon.png';
+import {useLocomotiveScroll} from "react-locomotive-scroll";
 
 const Navbar = () => {
+
+    const { scroll } = useLocomotiveScroll();
+
     return (
         <div className="navbar">
             <div className="left">
