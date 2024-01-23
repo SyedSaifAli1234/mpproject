@@ -22,8 +22,21 @@
 
 .content-container2-third {
     display: flex;
-    justify-content: end;
+    justify-content: space-between; /* Use space-between to position items at the start and end */
+    align-items: center;
     margin-right: 5em;
+    position: relative;
+}
+
+.content-container2-third::after {
+    content: '';
+    position: absolute;
+    bottom: -6em; /* Adjust the distance of the line break from the content */
+    left: 54%; /* Set left to 50% for centering */
+    transform: translateX(-50%); /* Adjust to center the line */
+    width: 91%; /* Adjust the width of the line */
+    height: 1px;
+    background-color: #d3d3d3; /* Faint line color */
 }
 
 .icon-image-third {
@@ -77,9 +90,19 @@
     position: relative;
 }
 
-.second-row-third{
+.second-row-third {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8em; /* Adjust as needed */
+    margin-left: 7em;
+    margin-right: 5em;
+}
+
+.icons-third {
+    display: flex;
+    align-items: center;
+    margin-left: 7em;
 }
 
 .analytics-pill-third {
@@ -87,12 +110,15 @@
     color: black;
     font-size: 4em;
     padding: 1em;
-    border-radius: 2em;
-    display: inline-block;
+    border-radius: 1.5em;
     font-family: monospace;
-    height: 2em;
-    width: 7em;
+    height: 3em;
+    width: 9em;
     overflow: hidden;
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Center the content vertically */
+    position: relative;       /* Position the content relative to the parent */
 }
 
 .marquee-text {
@@ -100,6 +126,7 @@
     white-space: nowrap;
     animation: marquee 8s linear infinite;
     display: inline-block;
+    position: absolute;  /* Position the text absolutely within the pill div */
 }
 
 @keyframes marquee {
@@ -112,4 +139,35 @@
     }
 }
 
+.left-div-third {
+    width: 45%; /* Adjust the width as needed */
+}
 
+.button-container-third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-button {
+    background-color: #f3f2f3;
+    color: black;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 13em;
+    font-size: 0.8em; /* Adjust the font size as needed */
+    font-weight: normal; /* Adjust the font weight as needed */
+}
+
+.free-button {
+    background-color: #ff4925;
+    color: white;
+    border: 1px solid #ff4925;
+    border-radius: 1em;
+    padding: 10px 20px;
+    width: 13em;
+    font-size: 0.8em; /* Adjust the font size as needed */
+    font-weight: normal; /* Adjust the font weight as needed */
+}
