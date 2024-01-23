@@ -162,3 +162,9 @@ body {
     margin-left: 48px;
 }
 
+.video-element {
+    width: 70%; /* Set the width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional: Add a box shadow */
+}

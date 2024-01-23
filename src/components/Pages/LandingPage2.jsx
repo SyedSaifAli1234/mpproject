@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './LandingPage2.css';
-import comp1 from '../../assets/comp.png';
-import comp2 from '../../assets/comp2.png';
 import { useInView } from 'react-intersection-observer';
+import videoComponent from '../../assets/vid.mp4';
+import videoComponent2 from '../../assets/vid2.mp4';
+
 
 const LandingPage2 = ({ id }) => {
     const controls = useAnimation();
@@ -63,10 +64,24 @@ const LandingPage2 = ({ id }) => {
                 <motion.div className="content-container2-second" variants={imageVariants}>
                     <motion.div className="image-container-second">
                         <motion.div variants={imageVariants}>
-                            <img src={comp1} alt="Laptop Image" className="laptop-image-second" />
+                            <video
+                                src={videoComponent}
+                                type="video/mp4"
+                                autoPlay
+                                muted
+                                loop
+                                className="video-element"
+                            />
                         </motion.div>
                         <motion.div variants={imageVariants}>
-                            <img src={comp2} alt="Laptop Image" className="laptop-image-second" />
+                            <video
+                                src={videoComponent2}
+                                type="video/mp4"
+                                autoPlay
+                                muted
+                                loop
+                                className="video-element"
+                            />
                         </motion.div>
                     </motion.div>
                 </motion.div>

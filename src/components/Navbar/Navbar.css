@@ -10,6 +10,8 @@
     margin-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
+    position: sticky;
+    top: 0;
 }
 
 .left {
@@ -19,7 +21,7 @@
     align-items: center;
 }
 
-.icon {
+.icon-nav {
     width: 40px;
     height: 40px;
     margin-right: 10px;

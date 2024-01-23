@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './LandingPage.css';
-import homeIcon1 from '../../assets/homeIcon1.png';
-import homeIcon3 from '../../assets/homeIcon3.png';
+import lines from '../../assets/lines.png';
 import image1 from '../../assets/laptop.png';
 import playButton from '../../assets/play-button.png';
-
-
+import pulse from "../../assets/heart.png";
+import flash from "../../assets/flash.png";
 import { useInView } from 'react-intersection-observer';
+
 
 const LandingPage = ({ id }) => {
     const controls = useAnimation();
@@ -36,7 +36,12 @@ const LandingPage = ({ id }) => {
                 <motion.div className="first-row">
                     <motion.div className="content-container1">
                         <motion.div className="text-container">
-                            <img src={homeIcon1} alt="Home Icon" className="icon-image" />
+                            <motion.div className="icon">
+                                <motion.img src={flash} alt="Pulse Icon" className="icon-image"/>
+                            </motion.div>
+                            <motion.div className="icon2">
+                                <motion.img src={pulse} alt="Pulse Icon" className="icon-image2"/>
+                            </motion.div>
                             <motion.div className="big-text">Analytics</motion.div>
                         </motion.div>
                         <motion.div className="text-container2">
@@ -63,11 +68,13 @@ const LandingPage = ({ id }) => {
                 <motion.div className="second-row">
                     <motion.div className="content-container3">
                         <motion.div className="big-text">shape</motion.div>
-                        <motion.img
-                            src={homeIcon3}
-                            alt="Home Icon"
-                            className="icon-image3"
-                        />
+                        <motion.div className="icon3">
+                            <motion.img
+                                src={lines}
+                                alt="Home Icon"
+                                className="icon-image3"
+                            />
+                        </motion.div>
                         <motion.div className="big-text">the future</motion.div>
                     </motion.div>
                 </motion.div>
