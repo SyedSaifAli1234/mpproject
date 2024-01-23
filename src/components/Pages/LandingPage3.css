@@ -40,9 +40,49 @@
 }
 
 .icon-image-third {
-    width: 213px; /* Set the size of the icon image */
-    height: 126px;
+    width: 5em; /* Set the size of the icon image */
+    height: 5em;
     border-radius: 100%;
+}
+
+.icon-text-third {
+    width: 5em; /* Set the size of the icon image */
+    height: 5em;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.icon-text2-third {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.icon-third {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 7em;
+    background-color: #f4f4f4;
+    border-radius: 4em;
+    width: 8em;
+    height: 8em;
+    justify-content: center;
+}
+
+.icon2-third {
+    display: flex;
+    align-items: center;
+    background-color: #ffd62d;
+    border-radius: 4em;
+    width: 8em;
+    height: 8em;
+    justify-content: center;
+    margin-left: 14em;
 }
 
 .laptop-image-third {
@@ -97,12 +137,6 @@
     margin-top: 8em; /* Adjust as needed */
     margin-left: 7em;
     margin-right: 5em;
-}
-
-.icons-third {
-    display: flex;
-    align-items: center;
-    margin-left: 7em;
 }
 
 .analytics-pill-third {

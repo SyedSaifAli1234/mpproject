@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './LandingPage3.css';
-import homeIcon1 from '../../assets/homeIcon1.png';
+import pulse from '../../assets/heart.png';
 import { useInView } from 'react-intersection-observer';
 
 const LandingPage3 = ({ id }) => {
     const controls = useAnimation();
-    const [ref, inView] = useInView({ triggerOnce: true });
+    const [ref, inView] = useInView({ triggerOnce: false }); // Set triggerOnce to false
 
     const containerVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -14,23 +14,23 @@ const LandingPage3 = ({ id }) => {
     };
 
     const textContainerVariants = {
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeInOut' } },
-    };
-
-    const iconVariants = {
-        hidden: { scale: 0 },
-        visible: { scale: 1, transition: { delay: 0.5, duration: 0.8, ease: 'easeInOut' } },
-    };
-
-    const analyticsPillVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 50 }, // Initial position below the imaginary line
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeInOut' } },
     };
 
+    const iconVariants = {
+        hidden: { opacity: 0, scale: 0.5 },
+        visible: { opacity: 1, scale: 1, transition: {delay: 1.2, duration: 0.8, ease: 'easeInOut' } },
+    };
+
+    const analyticsPillVariants = {
+        hidden: { opacity: 0, scale: 0.5 },
+        visible: { opacity: 1, scale: 1, transition: {delay: 1.2, duration: 0.8, ease: 'easeInOut' } },
+    };
+
     const marqueeTextVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.8, ease: 'easeInOut' } },
+        hidden: { opacity: 0, y: 50 }, // Initial position below the imaginary line
+        visible: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.8, ease: 'easeInOut' } },
     };
 
     const leftDivVariants = {
@@ -39,8 +39,8 @@ const LandingPage3 = ({ id }) => {
     };
 
     const buttonContainerVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { delay: 1.2, duration: 0.8, ease: 'easeInOut' } },
+        hidden: { opacity: 0, scale: 0.5 }, // Initial scale for a "bubble" effect
+        visible: { opacity: 1, scale: 1, transition: { delay: 1.2, duration: 0.8, ease: 'easeInOut' } },
     };
 
     React.useEffect(() => {
@@ -67,13 +67,12 @@ const LandingPage3 = ({ id }) => {
                             </motion.div>
                         </motion.div>
                     </motion.div>
-                    <motion.div className="content-container2-third" variants={iconVariants}>
-                        <motion.div className="icons-third">
-                            <motion.img
-                                src={homeIcon1}
-                                alt="Home Icon"
-                                className="icon-image"
-                            />
+                    <motion.div className="content-container2-third" variants={analyticsPillVariants}>
+                        <motion.div className="icon-third">
+                            <motion.img src={pulse} alt="Pulse Icon" className="icon-image-third"/>
+                        </motion.div>
+                        <motion.div className="icon2-third">
+                            <motion.div className="icon-text-third">+30%</motion.div>
                         </motion.div>
                         <motion.div
                             className="analytics-pill-third"
