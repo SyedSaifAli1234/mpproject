@@ -16,11 +16,8 @@ const LandingPage2 = ({ id }) => {
     };
 
     const imageVariants = {
-        hidden: { scale: 0 },
-        visible: {
-            scale: 1,
-            transition: { delay: 0.5, duration: 0.8, ease: 'easeInOut' },
-        },
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 2, ease: 'easeInOut' } },
     };
 
     const textContainerVariants = {
