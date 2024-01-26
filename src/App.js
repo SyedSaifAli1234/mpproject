@@ -4,9 +4,14 @@ import LandingPage from './components/Pages/LandingPage';
 import LandingPage2 from './components/Pages/LandingPage2';
 import LandingPage3 from './components/Pages/LandingPage3';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
+import { inject } from '@vercel/analytics';
 
 const App = () => {
     const { scroll } = useLocomotiveScroll();
+
+    useEffect(()=>{
+        inject();
+    },[]);
 
 
     return (
